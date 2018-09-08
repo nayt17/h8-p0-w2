@@ -1,0 +1,81 @@
+Exercise 1 Week 2 (Pseudocode Challenge)
+
+1. Jawaban:
+- Algoritma
+1. Mencari tau apa yang mau dicari(dalam hal ini adalah nilai resultan gaya.
+2. Mendapatkan nilai massa yaitu 600 kg, dan nilai percepatan sebesar 2 m/s2.
+3. Setelah itu kalikan nilai massa dengan nilai percepatan.
+4. Bila hasil sudah didapatkan, maka hasil tersebut dimasukkan kedalam resultan gaya
+5. Maka telah didapatkan hasil resultan gaya adalah 1200
+
+- Pseucode
+STORE 'massa' WITH 600
+STORE 'percepatan' WITH 2
+STORE 'resultan' WITHOUT ANY VALUE
+
+CALCULATE 'massa' times 'percepatan'
+SET calculation value to 'resultan'
+
+DISPLAY 'resultan'
+
+2. Jawaban:
+- Algoritma
+1. Mencari tau masalah yang dihadapi(dalam hal ini adalah apakah tahun merupakan tahun kabisat)
+2. Memilih tahun yang akan dicari
+3. Bila sudah, maka akan dilakukan proses berikutnya
+4. Tahun kabisat memiliki 2 kriteria
+5. yaitu, jika tahun dapat dibagi 4 dan tidak habis dibagi 100 maka tahun merupakan tahun kabisat
+6. sedangkan, jika tahun dapat dibagi 4, lalu dapat dibagi 100, dan dapat dibagi 400, maka tahun tersebut juga merupakan tahun kabisat
+7. Tetapi bila langkah 5 atau langkah 6 tidak terpenuhi, maka tahun tersebut bukan merupakan tahun kabisat
+
+- Pseudocode
+STORE 'tahun' WITH ANY VALUE
+
+IF 'tahun' mod 4 && 'tahun' !mod 100
+	DO "Tahun Kabisat"
+ELSEIF 'tahun' mod 4 && 'tahun' mod 100 && 'tahun' mod 400
+	DO "Tahun Kabisat"
+ELSE
+	DO "BUKAN TAHUN KABISAT"
+DO "Terima kasih"
+
+3. Jawaban:
+-Algoritma
+1. Mengumpulkan terlebih dahulu baju kedalam bak penampung
+2. Jika baju sudah terkumpul dalam bak, maka lanjut ke langkah berikutnya
+3. Masukkan baju satu per satu yang ada pada bak kedalam mesin cuci
+4. Bila baju dalam bak sudah habis, maka semua baju dalam bak sudah masuk kedalam mesin cuci
+5. Lalu mesin cuci siap untuk dinyalakan. 
+
+- Pseudocode
+STORE 'BAJU' WITH 20
+STORE 'mesinCuci' WITH 0
+
+WHILE 'BAJU' > 0 && 'mesinCuci' < 20
+	ADD 'BAJU' by -1
+	ADD 'mesinCuci' by 1
+
+DISPLAY "MESIN SUDAH TERISI, MESIN DINYALAKAN"
+
+4. Jawaban:
+- Algoritma
+1. Mengumpulkan semua murid dalam kelas untuk pemeriksaaan kuku
+2. Jika sudah, maka murid akan disuruh berbaris
+3. Murid yang sudah berbaris maka akan dipanggil satu persatu
+4. Jika murid yang dipanggil memiliki kuku pendek, maka akan diberikan pujian
+5. Namun bila murid yang dipanggil memiliki kuku panjang, maka akan diberikan hukuman
+6. Murid akan terus dipanggil satu persatu sampai semua murid dalam barisan telah diperiksa
+7. Bila sudah diperiksa maka murid boleh keluar dari barisan
+
+- Pseudocode
+STORE 'jumlahSiswa' WITH 1 
+STORE 'panjangKuku' WITH ANY STRING
+
+WHILE 'jumlahSiswa' < 41
+	IF 'panjangKuku' != 'panjang'
+		DO "Bagus saya puji kamu"
+	ELSE 
+		DO  "Kamu saya hukum"
+	Add 'jumlahSiswa' by 1  
+	
+	
